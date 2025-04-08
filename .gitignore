@@ -1,4 +1,7 @@
 __pycache__
 .env
 .venv
+build
 creds
+dist
+*.spec
