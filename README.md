@@ -2,10 +2,12 @@
 Simple tool to change R6 account settings.
 
 ## Quick start:
-1. Place any Ubisoft account into the `.env` file with the following keys:
-```
-EMAIL=
-PASSWORD=
+1. Place any Ubisoft account into the `config.json` file with the following format:
+```json
+{
+    "email": "",
+    "password": ""
+}
 ```
 
 2. Run `compile.bat` to create an executable or `run.bat` to run.

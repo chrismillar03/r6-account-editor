@@ -1,6 +1,6 @@
 import asyncio, os, time
 from dotenv import load_dotenv
-from account_editor import Account, Editor, DATACENTERS
+from account_editor import Account, Config, Editor, DATACENTERS
 
 def array_selector(arr: list):
 	for i, j in enumerate(arr):
@@ -27,7 +27,14 @@ async def main() -> None:
 	os.system("cls" if os.name == "nt" else "clear")
 	load_dotenv()
 
-	account_editor: Editor = Editor(os.getenv("EMAIL"), os.getenv("PASSWORD"))
+	config: Config = Config("config.json", {
+		"email": "",
+		"password": ""
+	})
+
+	config.load()
+
+	account_editor: Editor = Editor(config.data["email"], config.data["password"])
 
 	await account_editor.load_accounts()
 
