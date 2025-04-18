@@ -25,7 +25,6 @@ def main():
 		"--onefile",
 		"--console",
 		"--clean",
-		"--add-data=.env:.",
 		"main.py"
 	])
 
