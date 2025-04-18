@@ -1,5 +1,4 @@
 import asyncio, os, time
-from dotenv import load_dotenv
 from account_editor import Account, Config, Editor, DATACENTERS
 
 def array_selector(arr: list):
@@ -25,7 +24,6 @@ def array_selector(arr: list):
 
 async def main() -> None:
 	os.system("cls" if os.name == "nt" else "clear")
-	load_dotenv()
 
 	config: Config = Config("config.json", {
 		"email": "",
