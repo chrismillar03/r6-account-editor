@@ -15,6 +15,6 @@ Simple tool to change R6 account settings.
 3. Start the application to select an account to change and what values.
 
 ## Notes:
-You can use any account in the `.env` file it's only used for API calls.
+You can use any account in the `config.json` file it's only used for API calls.
 
 Credit to [CNDRD](https://github.com/CNDRD) for creating [siegeapi](https://github.com/CNDRD/siegeapi)
